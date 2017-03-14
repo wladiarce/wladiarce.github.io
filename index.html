@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wladi Arce</title>
+	<title>wladiarce - Engineering my future</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- CUSTOM CSS FOR OVERIDING -->
 	<style>
@@ -12,7 +12,7 @@
 		html, body {height: 100%;}
 		a{text-decoration: none !important; color: inherit !important;}
 		.bg-picture {background: url('../wladiarce.github.io/img/bg.jpg') center / cover;}
-		.fill {height: 100%;}
+		.fill {min-height: 100% !important;height: auto; }
 		.full-height{}
 
 		.no-padding{padding: 0px !important;}
@@ -20,7 +20,7 @@
 		.mdl-tabs__panel{padding: 40px !important;}
 		.name{font-size:35px; padding-top: 30px;}
 		.id_pic{ margin-left: -15px !important; margin-right: -15px !important;}
-	
+		.mdl-button{min-height: 36px; height: auto !important; }
 	</style>
 <!-- MATERIAL DESIGN -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -36,16 +36,18 @@
 </head>
 <!-- _______________________Start of the body____________________ -->
 <body>
-	<div class="container-fluid fill no-padding">
+	<div class="container-fluid no-padding" style="height: 100%; width: 100%; position: absolute;">
+	
 	<!-- LEFT BANNER: INFO ABOUT ME AND CONTACT -->
-		<div class="col-sm-3 fill fill bg-indigo mdl-shadow--16dp " style="padding-top: 40px;">
+		<div class="col-sm-3 fill bg-indigo mdl-shadow--16dp " style="padding-top: 40px;">
 			<div class="text-center"><img src="../wladiarce.github.io/img/1FotoCarnet.jpg" class="img-thumbnail"></div>
 			<div class="text-center">
-				<h1 class="name"><i><b>WLADI</b> ARCE</i></h1> 
+				<h1 class="name"><i><b>WLADI</b> <span class="accent-pink">ARCE</span></i></h1> 
 				<h4>Engineering student</h4>
 				<h5>[Valencia] [Brussels]</h5>
 			</div>
-			
+			<div class="bg-pink" style="height: 2px; margin-top: 25px; border-radius: 1px;"></div>
+			<!-- ---------- URLs         ----------------------------------------------------------  -->
 			<div class="container-fluid" style="padding-top: 20px;">
 				<a href="http://github.com/wladiarce/" target="_blank"><h4 style="line-height: 1.8;"><i class="fa fa-github fa-lg accent-pink"></i> Check out my GitHub profile</h4></a>
 
@@ -58,7 +60,7 @@
 			</div>
 		</div>
 
-	<!-- RIGHT SIDE -->
+	<!-- ---------- RIGHT SIDE           ------------------------------------------------------------  -->
 		<div class="col-sm-9">
 
 		<!-- NICE PIC OR WHATEVER I WANT HERE -->
@@ -70,12 +72,12 @@
 				      <a href="#resume-panel" class="mdl-tabs__tab is-active">Resume</a>
 				      <a href="#projects-panel" class="mdl-tabs__tab">Projects</a>
 				</div>
-			<!-- TAB 1: RESUME -->
+			<!-- -------- TAB 1: RESUME 	--------------------------------------------------- -->
 				<div class="mdl-tabs__panel is-active" id="resume-panel">
 				    my resume goes here
 				</div>
 
-			<!-- TAB 2: PROJECTS -->
+			<!-- -------- TAB 2: PROJECTS 	--------------------------------------------------- -->
 				<div class="mdl-tabs__panel" id="projects-panel">
 				    github and non-github ones
 				</div>
