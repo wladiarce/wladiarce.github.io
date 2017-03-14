@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- import both bootstrap and material design -->
+	<title>Wladi Arce</title>
+<!-- CUSTOM CSS FOR OVERIDING -->
+	<style>
+		.bg-cyan{background: #00bcd4; color: black;}
+		.bg-pink{background: #e91e63; color: white;}
+		html>body {font-family: 'Roboto','Helvetica','Arial',sans-serif!important; font-size: 14px; font-weight: 400;}
+		html, body {height: 100%;}
+		.bg-picture {background: url('../wladiarce.github.io/img/bg.jpg') center / cover;}
+		.fill { min-height: 100%;height: 100%;}
+		.no-padding{padding: 0px !important;}
+		.my-jumbo{border-radius: 0px !important; margin-left: -15px !important; margin-right: -15px !important; min-height: 200px;}
+		.mdl-tabs__panel{padding: 40px !important;}
+	</style>
+<!-- MATERIAL DESIGN -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-pink.min.css" />
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- FONT-AWESOME -->
+	<script src="https://use.fontawesome.com/4a771014e8.js"></script>
+
 </head>
 <!-- _______________________Start of the body____________________ -->
-<h1> HELLOO</h1>
 <body>
+	<div class="container-fluid fill no-padding">
+	<!-- LEFT BANNER: INFO ABOUT ME AND CONTACT -->
+		<div class="col-sm-3 fill bg-cyan mdl-shadow--16dp text-center" style="padding-top: 50px">
+			<img src="../wladiarce.github.io/img/1FotoCarnet.jpg" class="img-thumbnail">
+		</div>
 
+	<!-- RIGHT SIDE -->
+		<div class="col-sm-9">
+
+		<!-- NICE PIC OR WHATEVER I WANT HERE -->
+			<div class="jumbotron bg-picture my-jumbo mdl-shadow--16dp"></div>
+
+		<!-- USEFUL THINGS, ACCESIBLE BY TABS -->
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+				<div class="mdl-tabs__tab-bar">
+				      <a href="#resume-panel" class="mdl-tabs__tab is-active">Resume</a>
+				      <a href="#projects-panel" class="mdl-tabs__tab">Projects</a>
+				</div>
+			<!-- TAB 1: RESUME -->
+				<div class="mdl-tabs__panel is-active" id="resume-panel">
+				    my resume goes here
+				</div>
+
+			<!-- TAB 2: PROJECTS -->
+				<div class="mdl-tabs__panel" id="projects-panel">
+				    github and non-github ones
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
