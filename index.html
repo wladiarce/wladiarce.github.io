@@ -41,21 +41,21 @@
 		.my-chip{height: 30px; border-radius: 18px; background:#FF4081; padding: 0 12px; display: inline-block; color: #fff; border: 0; font-size: 20px; line-height: 30px;}
 		.my-footer{ width: 100%;margin-top: 30px; margin-right: -30px; margin-bottom: 0px; margin-left:-30px;}
 
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-  flex-wrap: wrap;
-}
-.row > [class*='col-'] {
-	display: flex;
-	flex-direction: column;
-}
+		.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
+		flex-wrap: wrap;
+		}
+		.row > [class*='col-'] {
+			display: flex;
+			flex-direction: column;
+		}
 
-@media only screen and (max-width: 767px){
-	.fullw{width: 100%;}
-}
+		@media only screen and (max-width: 767px){
+			.fullw{width: 100%;}
+		}
 
 	</style>
 
@@ -136,25 +136,40 @@
 			<!-- -------- TAB 1: PROJECTS 	--------------------------------------------------- -->
 				<div class="mdl-tabs__panel is-active no-padding" id="projects-panel" >
 				    <div class="container-fluid" style="margin: -40px !important;">
-				 		<div class="row">
+						 
+						<div class="row">
+						<!-- CARSHARING APP -->
+						<div class="col-lg-6">
+			    				<div class="mdl-card mdl-shadow--8dp">
+				    				<div class="mdl-card__title white" style="background: url('../wladiarce.github.io/img/project-4.jpg') center / cover;"><h1 class="mdl-card__title-text"><div class="my-chip">Carsharing WebApp</div></h1></div>
+				    				<div class="mdl-card__supporting-text font-14">A web application for carsharing. Develoed as personal project during my internship to promote a more sustainable way of transport. Made with Angular and Firebase.</div>
+				    				<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect white" href="https://poolandgo-fe712.firebaseapp.com"  target="_blank">Check it out!</a></div>
+				    			</div>
+							</div>
 				 		<!-- BEAM STRUCTURES ANALISYS -->
 			    			<div class="col-lg-6">
 				    			<div class="mdl-card mdl-shadow--8dp">
 				    				<div class="mdl-card__title white" style="background: url('../wladiarce.github.io/img/project-1.jpg') center / cover;"><h1 class="mdl-card__title-text"><div class="my-chip">Truss structures analyzer</div></h1></div>
-				    				<div class="mdl-card__supporting-text font-14">This VBA Excel add-in computes loaded 2D truss structures, input in the spreadsheet.</div>
+				    				<div class="mdl-card__supporting-text font-14">This VBA Excel add-in computes displacements and reactions in loaded 2D truss structures, input in the spreadsheet.</div>
 				    				<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect white" href="http://github.com/wladiarce/2D_StructuralAnalysis" target="_blank">Check it out!</a></div>
 				    			</div>
 			    			</div>
-			    		<!-- ROBOT PRESENTER APP -->
+			    		<!-- ROBOT RETAIL APP -->
 			    			<div class="col-lg-6">
 			    				<div class="mdl-card mdl-shadow--8dp">
+				    				<div class="mdl-card__title white" style="background: url('../wladiarce.github.io/img/project-5.jpg') center / cover;"><h1 class="mdl-card__title-text"><div class="my-chip">Robot Retailer App</div></h1></div>
+				    				<div class="mdl-card__supporting-text font-14">An application for the robot Pepper that lets use it as customer attraction in retail shops. Tested in Brussels Zaventem Airport.</div>
+				    				<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect white" href="https://wladiarce.github.io/"  target="_blank">Check it out!</a></div>
+				    			</div>
+							</div>
+						<!-- ROBOT PRESENTER APP  -->
+			    			<div class="col-lg-6">
+								<div class="mdl-card mdl-shadow--8dp">
 				    				<div class="mdl-card__title white" style="background: url('../wladiarce.github.io/img/project-2.jpg') center / cover;"><h1 class="mdl-card__title-text"><div class="my-chip">Robot Presenter App</div></h1></div>
 				    				<div class="mdl-card__supporting-text font-14">An application for the robot Pepper that enables it to do PowerPoint presentations. PowerPoint add-in to export the presentations included.</div>
 				    				<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect white" href="https://wladiarce.github.io/PepperPresenter/"  target="_blank">Check it out!</a></div>
 				    			</div>
-			    			</div>
-				    	</div>
-			    		<div class="row">
+							</div>
 			    		<!-- INOXTURIA WEBSITE -->
 			    			<div class="col-lg-6">
 			    				<div class="mdl-card mdl-shadow--8dp">
@@ -162,8 +177,8 @@
 				    				<div class="mdl-card__supporting-text font-14">Webpage for the spanish company Inoxturia. Developed under the responsive framework Bootstrap3. Static.</div>
 				    				<div class="mdl-card__actions mdl-card--border"><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect white" href="http://inoxturia.com"  target="_blank">Check it out!</a></div>
 				    			</div>
-			    			</div>
-			    			<div class="col-lg-6"></div>
+							</div>
+			
 			    		</div>
 			    	</div>
 				</div>
@@ -176,16 +191,16 @@
 				    	<div class="col-sm-10">
 				    		
 		<!-- education -->
-				    		<h3 class="accent-pink"> <i class="fa fa-university"></i><em><b> EDUCATION</b></em></h3>
-				    		<div class="row">
-				    			<div class="col-sm-12">
-				    				<h4 class="ind-1 first-item"><a href="http://www.upv.es/titulaciones/GITI/indexi.html">[Bachelor degree] Industrial Technologies Engineering</a></h4>
+							<h3 class="accent-pink"> <i class="fa fa-university"></i><em><b> EDUCATION</b></em></h3>
+							<div class="row">
+		    					<div class="col-sm-12">
+		    						<h4 class="ind-1 first-item"><a href="http://www.upv.es/titulaciones/MUII/index-en.html">[Master degree] Industrial Engineering</a></h4>
 				    				<h5 class="ind-2"><a href="http://www.upv.es/index-en.html" >Universitat Polit&egrave;cnica de Val&egrave;ncia (UPV)</a>,<a href="http://www.etsii.upv.es/index-es.php"> ETSII</a></h5>
-				    				<h5 class="ind-2">2013/2016 (Anticipated graduation)</h5>
-				    				<h5 class="ind-2">Double degree program</h5>
+		    						<h5 class="ind-2">2017/2019</h5>
+		    						<h5 class="ind-2">Double degree program</h5>
 				    			</div>
 				    		</div>
-				    		<div class="row">
+							<div class="row">
 		    					<div class="col-sm-12">
 		    						<h4 class="ind-1 first-item"><a href="http://www.bruface.eu/EN/Master_Programmes/Electromechanical_Engineering/">[Master degree] Electromechanical engineering. Vehicles technology and transport</a></h4>
 		    						<h5 class="ind-2">
@@ -194,9 +209,34 @@
 		    						<h5 class="ind-2">Double degree program</h5>
 				    			</div>
 				    		</div>
+				    		<div class="row">
+				    			<div class="col-sm-12">
+				    				<h4 class="ind-1 first-item"><a href="http://www.upv.es/titulaciones/GITI/indexi.html">[Bachelor degree] Industrial Technologies Engineering</a></h4>
+				    				<h5 class="ind-2"><a href="http://www.upv.es/index-en.html" >Universitat Polit&egrave;cnica de Val&egrave;ncia (UPV)</a>,<a href="http://www.etsii.upv.es/index-es.php"> ETSII</a></h5>
+				    				<h5 class="ind-2">2013/2016 (Anticipated graduation)</h5>
+				    				<h5 class="ind-2">Double degree program</h5>
+				    			</div>
+				    		</div>
 		<!-- work experience -->
 							<h3 class="accent-pink first-item"> <i class="fa fa-user"></i><em><b> WORK EXPERIENCE</b></em></h3>
-							<h5 class="accent-pink">Because everyone has been a waiter at least once in his life:</h5>
+							<h5 class="accent-pink">Technical:</h5>
+							<div class="row">
+				    			<div class="col-sm-12">
+				    				<h4 class="ind-1 first-item"><a href="https://us.pg.com/">[Internship] Procter &amp; Gamble</a></h4>
+				    				<h5 class="ind-2">Brussels, Belgium</h5>
+				    				<h5 class="ind-2">July - October 2015 (4 months)</h5>
+				    				<h5 class="ind-2">Project management and engineering - Product Supply.</h5>
+				    			</div>
+							</div>
+							<div class="row">
+				    			<div class="col-sm-12">
+				    				<h4 class="ind-1 first-item"><a href="https://www.brubotics.eu/">[Developer] brubotics - VUB</a></h4>
+				    				<h5 class="ind-2">Brussels, Belgium</h5>
+				    				<h5 class="ind-2">June - September 2017</h5>
+				    				<h5 class="ind-2">Development of new behaviors for the use of social robots as and attraction for retail shops</h5>
+				    			</div>
+				    		</div>
+							<h5 class="accent-pink">And because everyone has been a waiter at least once in his life:</h5>
 							<div class="row">
 				    			<div class="col-sm-12">
 				    				<h4 class="ind-1 first-item"><a href="http://texture-restaurant.co.uk/">[Waiter] Texture Restaurant</a></h4>
@@ -239,7 +279,7 @@
 				    				<h5 class="ind-2">[Database] [Backend]</h5>
 				    			</div>
 				    			<div class="col-xs-4">
-				    				<div class="progress"><div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div></div>
+				    				<div class="progress"><div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:30%"></div></div>
 				    			</div>
 				    		</div>
 
